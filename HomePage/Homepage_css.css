@@ -1,0 +1,455 @@
+/* Reset & Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: rgba(255, 255, 255);
+    position: fixed;
+    top: 0;
+    width: calc(100% - 2rem);
+    z-index: 10;
+    border-radius: 2rem;
+    margin: 1rem;
+  }
+  
+  .logo img {
+    height: 32px;
+    max-width: 100%;
+  }
+  
+  .mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #7CAF36;
+    cursor: pointer;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 12rem;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: none;
+    font: inherit;
+    color: #7CAF36;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0.5rem 0;
+  }
+  
+  .dropdown-icon {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.3s ease;
+  }
+  
+  .dropdown-menu {
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    min-width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 0.5rem 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 100;
+  }
+  
+  .dropdown-menu a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #333;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+  
+  .dropdown-menu a:hover {
+    background: #f5f5f5;
+  }
+  
+  /* Active state */
+  .dropdown.active .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  
+  .dropdown.active .dropdown-icon {
+    transform: rotate(180deg);
+  }
+  .nav-links a {
+    text-decoration: none;
+    color: #7CAF36;
+    font-weight: bold;
+  }
+  
+  .login-btn {
+    padding: 0.4rem 1.2rem;
+    border: none;
+    border-radius: 20px;
+    background-color: #B5D560;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+  }
+
+  .login-btn a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    height: 100vh;
+    background-image: url('Homepage_BG.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 4rem;
+    line-height: 1;
+  }
+
+  .hero-text{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+  }
+  
+  .hero-text h1 {
+    font-family: "Unbounded",sans-serif;
+    text-align: center;
+    font-weight: 500;
+    font-size: 4.5rem;
+    color: white;
+    letter-spacing: 0.4vw;
+  }
+
+  .subhero-text {
+    font-family: "Poppins",sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 2vh;
+    margin-bottom: 6vh;
+    font-weight: 100;
+    font-size: 1.5rem;
+  }
+  
+  .text-btn {
+    padding: 0.6rem 5rem;
+    background-color: #B5D560;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  .get-started-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #AED22B;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    padding: 0.5vh 0.5vw 0.5vh 1vw;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 20vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    align-self: center;
+}
+
+.get-started-button-link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.arrow-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: #92D050;
+    font-size: 1.2rem;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+
+  /*About Us*/
+.AgriLuntian {
+	font-size: 5rem;
+  }
+  
+  h1 {
+    font-family: "Unbounded",sans-serif;
+    font-weight: 500;
+    font-size: 3rem;
+    color: #224844;
+    margin-top: 0;
+  }
+  
+   .about-us-content {
+	 display: flex;
+	 justify-content: space-between;
+	 align-items: flex-start;
+	 flex-wrap: wrap;
+	 padding: 5vw 1vw 5vw 5vw;
+  }
+  
+  .about-us-b1 {
+    font-family: "Unbounded",sans-serif;
+    width: 42%;	
+    font-weight: 300;
+    font-size: 1.1rem;
+    color: #224844;
+    line-height: 2.2;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  
+   .about-us-b2 {
+    width: 95%;   
+    margin-left: auto;
+    padding-right: 5vh;
+    text-align: right;    
+    align-items: flex-start;
+    font-family: "Unbounded", sans-serif;
+    font-weight: 300;
+    font-size: 1.1rem;
+    color: #224844;
+    line-height: 2.2;
+    margin-bottom: -10vh;
+  }
+  
+  .about-us-p1 {
+    width: 95%;
+    text-align: left;
+	  margin-bottom: 8vh;
+  }	
+  .about-us-p2 { 
+	  margin-bottom: 2vh;
+  }
+  
+  b {
+	  font-weight: 700;
+  }
+  
+   .cattle {
+    margin-left: auto;
+	   border-bottom-left-radius: 12%;
+	   border-top-left-radius: 12%;
+	   width: 40vw;
+	   height: 40vh;
+     max-width: 100%;
+     height: auto;
+	   display: flex;
+	   margin-bottom: 3vh;
+  }
+  
+   .container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    width: 52%; 
+    line-height: 1.6;
+  }
+
+  /* Responsive Styles */
+  
+  @media (max-width: 768px) {
+    .mobile-menu-btn {
+      display: block;
+    }
+    
+    .nav-links {
+      position: fixed;
+      top: 80px;
+      left: 1rem;
+      right: 1rem;
+      background: rgba(255, 255, 255, 0.95);
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 2rem;
+      border-radius: 1rem;
+      gap: 1.5rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      transform: translateY(-150%);
+      opacity: 0;
+    }
+    
+    .nav-links.active {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    
+    .login-btn {
+      width: 100%;
+      padding: 0.8rem;
+    }
+    
+    .hero-section {
+      padding: 0 2rem;
+      justify-content: center;
+      text-align: center;
+    }
+    
+    .hero-text h1 {
+      font-size: 2rem;
+    }
+
+    .subhero-text {
+      font-size: 0.8rem;
+    }
+
+    .about-us-content {
+        flex-direction: column;
+        padding: 4vw 5vw 0vw 5vw;
+        align-items: center;
+    }
+
+    .about-us-b1,
+    .container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-us-b1 h1 {
+        font-size: 2.5rem;
+        text-align: left;
+    }
+
+    .about-us-b1 p {
+        text-align: left;
+        font-size: 1rem;
+        line-height: 1.8;
+        margin-bottom: 3dvh;
+    }
+
+    .AgriLuntian {
+        font-size: 3rem;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .cattle {
+        width: 90vw;
+        height: auto;
+        border-radius: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-us-b2 {
+        text-align: right;
+        padding-right: 0;
+        padding-left: 0;
+        margin-bottom: 2dvh;
+    }
+
+    .about-us-b2 p {
+        margin-bottom: 0;
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+
+    .get-started-button {
+        font-size: 1rem;
+        width: 40%; 
+        max-width: 300px; 
+  }
+
+  }
+  
+  @media (max-width: 480px) {
+    .navbar {
+      border-radius: 1rem;
+      margin: 0.5rem;
+      width: calc(100% - 1rem);
+    }
+    
+    .hero-text h1 {
+      font-size: 1.8rem;
+    }
+    
+    .hero-section {
+      background-image: url('Homepage_BG.jpg');
+    }
+    
+    .text-btn {
+      padding: 0.6rem 1.5rem;
+      font-size: 0.9rem;
+    }
+    .about-us-content {
+        padding: 5vw 4vw 0vw 4vw;
+    }
+
+    .about-us-b1 h1 {
+        font-size: 2rem;
+    }
+
+    .AgriLuntian {
+        font-size: 2.5rem;
+    }
+
+    .cattle {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .get-started-button {
+    font-size: 0.8rem;
+    width: 100%; 
+  }
+
+    .arrow-icon {
+    transform:scale(0.8);    
+  }
+
+  .logo {
+    margin: 0 !important;
+  }
+}

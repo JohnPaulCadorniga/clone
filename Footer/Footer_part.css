@@ -1,0 +1,208 @@
+footer {
+    padding: 0;
+    background-color: #343434;
+    padding: 3vh 5vw 3vh 5vw;
+    width: 100%;
+  }
+  
+  .footer-container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .footer-b1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    color: white;
+    width: 35%;
+  }
+
+  .logo {
+    width: 10%;
+  }
+  
+  .footer-b2, .footer-b3 {
+    font-family: "Poppins", sans-serif;
+    width: 27%;
+    color: white;
+  }
+  
+  .footer-b2 a, .footer-b3 a{
+    text-decoration: none;
+    color: white;
+    font-weight: 20;
+  }
+  
+  .follow-us {
+    font-size: 0.9rem;
+    color: white;
+    font-weight: 800;	
+    margin-bottom: 3vh;	
+  }
+  
+  .footer-link {
+	  list-style: none;
+    padding: 0;
+  }
+  
+  .footer-b4 {
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .sign-up {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 1000;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 12px;
+    width: 10vw;
+    height: 5vh;
+    color: #224844;
+    background-color: #D8D8D8;
+    margin-bottom: 3vh;
+    cursor: pointer;
+  }
+
+  .sign-up a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .soc-icon {
+    width: 3vw;
+    height: 4vh;
+    border-radius: 5px;
+  }
+  
+  .soc {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .footer-end {
+    font-family: "Poppins", sans-serif;
+    color: #D8D8D8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+    }
+
+    .footer-b1,
+    .footer-b2,
+    .footer-b3,
+    .footer-b4 {
+        width: 100%; 
+        margin-bottom: 3vh; 
+    }
+    .footer-b1 {
+        font-size: 1.2rem; 
+    }
+
+    .logo {
+        width: 25%; 
+        margin-bottom: 1vh;
+    }
+
+    .footer-b2 ul,
+    .footer-b3 ul {
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: center; 
+        padding: 0; 
+    }
+
+    .footer-b2 li,
+    .footer-b3 li {
+        margin: 0 10px; 
+    }
+
+    .footer-b4 {
+        order: 4; 
+        margin-top: 2vh;
+    }
+
+    .sign-up {
+        width: 50vw; 
+        font-size: 1rem; 
+        height: 6vh; 
+    }
+
+    .soc-icon {
+        width: 8vw; 
+        height: auto; 
+    }
+
+    .follow-us {
+        font-size: 0.8rem; 
+        margin-top: 2vh;
+    }
+
+    .footer-end {
+        flex-direction: column; 
+        text-align: center;
+        margin-top: 2vh;
+    }
+
+    .footer-end p {
+        margin-bottom: 1vh; 
+        font-size: 0.8rem; 
+    }
+}
+
+
+@media (max-width: 480px) {
+    .footer-b1 {
+        font-size: 1rem;
+    }
+
+    .logo {
+        width: 10%;
+    }
+
+    .sign-up {
+        margin: 0;
+        height: 4vh;
+        width: 20vw;
+        font-size: 0.9rem;
+    }
+
+    .soc-icon {
+        width: 5vw;
+    }
+
+    .footer-b2 li,
+    .footer-b3 li {
+        margin: 0 8px; 
+    }
+
+    .footer-b4 {
+      margin: 0;
+    }
+
+    .footer-end p {
+        font-size: 0.7rem;
+    }
+
+    .follow-us {
+      margin-top: 1vh;
+      margin-bottom: 1vh;
+    }
+}
+
+   
+
+

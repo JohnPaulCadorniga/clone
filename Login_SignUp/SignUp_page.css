@@ -1,0 +1,135 @@
+body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: url('BG-blur.png') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .signup-container {
+      position: relative;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      padding: 40px;
+      width: 550px;
+      text-align: center;
+      font-weight: 800;
+      box-sizing: border-box;
+    }
+
+    .back-button {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+    }
+
+    .back-button img {
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+    }
+
+    .signup-container img.logo {
+      width: 50px;
+      margin-top: 10px;
+      margin-bottom: 0;
+    }
+
+    .signup-container h2 {
+      font-weight: 700;
+      color: #7CB342;
+      margin-top: 3px;
+    }
+
+    .name-fields {
+      display: flex;
+      gap: 10px;
+    }
+
+    .name-fields input {
+      flex: 1;
+      margin: 0;
+    }
+
+    .signup-container input {
+      width: 100%;
+      padding: 13px 18px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 13px;
+      font-size: 14px;
+      line-height: 1.2;
+      box-sizing: border-box;
+    }
+
+    .signup-container button {
+      padding: 13px 65px;
+      background-color: #7CB342;
+      color: white;
+      border: none;
+      border-radius: 50px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+      font-weight: 600;
+    }
+
+    .social-login {
+      margin: 15px 0;
+      color: #777;
+      font-size: 12px;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .social-icon {
+      width: 40px;
+      height: 40px;
+      background-color: #e0e0e0;
+      border-radius: 15%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .social-icon:hover {
+      transform: scale(1.1);
+    }
+
+    .social-icon img {
+      width: 24px;
+      height: 24px;
+    }
+
+    .terms {
+      font-size: 11px;
+      color: #333;
+      margin-top: 15px;
+      font-weight: normal;
+    }
+
+    .terms a {
+      color: #7CB342;
+      text-decoration: none;
+    }
+
+   @media (max-width: 480px) {
+  .signup-container {
+    width: 100%;
+    padding: 15px;
+    margin: 10px auto;
+
+    transform: scale(0.85); 
+    transform-origin: top center; 
+  }
+}

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <title>Rooted in Nature</title>
+  <link rel="stylesheet" href="HomePage/Homepage_css.css" />
+  <link rel="stylesheet" href="./News/News_page.css">
+  <link rel="stylesheet" href="./Footer/Footer_part.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<!--Start of NavBar-->
+  <header class="navbar">
+    <div class="logo">
+    <a href = "./index.html">
+    <img src="./HomePage/AgriLuntian_logo.png" alt="Logo">
+    </a>
+    </div>
+    
+    <button class="mobile-menu-btn" aria-label="Toggle menu">
+      <i class="fas fa-bars"></i>
+    </button>
+    
+    <nav class="nav-links">
+        <div class="dropdown">
+            <button class="dropdown-btn" aria-expanded="false">
+              FARMING
+              <img src="./HomePage/dropdown.png" alt="" class="dropdown-icon">
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="#">Prices</a></li>
+              <li><a href="#">Seasons</a></li>
+              <li><a href="#">Environment</a></li>
+            </ul>
+          </div>
+
+          <div class="dropdown">
+            <button class="dropdown-btn" aria-expanded="false">
+              LIVESTOCK
+              <img src="./HomePage/dropdown.png" alt="" class="dropdown-icon">
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="#">Poultry Farming</a></li>
+              <li><a href="#">Piggery Farming</a></li>
+              <li><a href="#">Cattle Farming</a></li>
+            </ul>
+          </div>
+
+          <div class="dropdown">
+            <button class="dropdown-btn" aria-expanded="false">
+              SERVICES
+              <img src="./HomePage/dropdown.png" alt="" class="dropdown-icon">
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="./LoanForm/LoanForm.html">Loans</a></li>
+              <li><a href="#">Partnerships</a></li>
+            </ul>
+          </div>
+
+      <a href="#news_part">NEWS</a>
+      <a href = "./Login_SignUp/Login.html"><button class="login-btn">LOGIN</button> </a>
+    </nav>
+  </header>
+<!--End of NavBar-->
+  <main class="hero-section">
+    <div class="hero-text">
+      <h1>Rooted in Nature,<br>Growing for the Future</h1>
+      <p class = "subhero-text"> To empower sustainable Filipino Agriculture through innovation, tradition, and nature-rooted solutions.</p>
+      <a href = "./Login_SignUp/SignUp.html" class = "get-started-button-link"><button class="get-started-button"> GET STARTED <span class="arrow-icon">❯</span></button></a>
+    </div>
+  </main>
+
+<div class = "about-us-content">
+	  <div class= "about-us-b1">
+      <h1> ABOUT US </h1>
+      
+        <p class = "about-us-p1">
+        <span style = "color: #AED22B; font-weight: 700;">AgriLuntian</span> combines “<b>Agri</b>,” meaning agriculture, 
+        with “<b>Luntian</b>,” the Filipino word for green,
+        symbolizing life, growth, and abundance. 
+        </p>
+        
+        <p  class = "about-us-p2">
+        It reflects the fertile lands, thriving crops, and 
+        sustainable practices that define Philippine 
+        agriculture while also honoring the deep cultural 
+        connection between Filipino farmers and the land.  
+        The name represents not only productivity but also a 
+        commitment to eco-friendly farming, resilience, and 
+        the legacy of nurturing the environment for future 
+        generations. 
+        </p>
+      </div>
+
+      <div class = "container">
+        <img src = "./HomePage/cattle.png" class = "cattle">
+      <div class = "about-us-b2">
+        <p><b>What is AgriLuntian</b></p>
+        <p>
+        An all-in-one digital platform designed to support and 
+        empower farmers by giving them easy access to 
+        agricultural knowledge, real-time data, and essential 
+        services. It connects farmers to valuable resources, helping 
+        them make smarter decisions, improve productivity, and 
+        build stronger linkages with support institutions.
+        </p>
+		  </div>
+	  </div>
+      <h1 class = "AgriLuntian"><span>Agri<span style = "color: #AED22B">Luntian</h1>
+  </div>
+<!--
+  <div class="hero" id = "news_part">
+    <div class="content">
+      <h1 class = "head">Latest<br><span>News</span></h1>
+
+     <div class="card top-left">
+  <div class="card-left">
+    <img src="./News/Guimaras-mangoes.jpg"Guimaras Mangoes">
+    <h3 class="News-title">
+    <a href="./https://example.com" target="_blank">
+      <u>PHLPost, LBC tapped for Guimaras mangoes</u>
+    </a>
+  </h3>
+  </div>
+  <div class="card-text">
+    <p class="date">DATE: May 21, 2025</p>
+    <p>
+      The Department of Trade and Industry (DTI) said it is teaming up with Shopee and LBC Express
+      to bring Guimaras mangoes into the e-commerce ecosystem to expand market opportunities for
+      the growers of the fruit.
+    </p>
+  </div>
+</div>
+
+
+     <div class="card bottom-left">
+  <div class="card-left">
+    <img src="./News/Sugar-news.jpeg" alt="Sugar Output">
+   <h3 class="News-title">
+    <a href="https://example.com" target="_blank">
+      <u>Pest threatens to dampen PHL sugar output</u>
+    </a>
+  </h3>
+  </div>
+  <div class="card-text">
+    <p class="date">DATE: May 21, 2025</p>
+    <p>
+      The Philippines’ raw sugar production reached 1.87 million metric tons (MMT) as of May 11,
+      higher than the Sugar Regulatory Administration’s (SRA) revised projection for the current crop year.
+    </p>
+  </div>
+</div>
+
+
+<div class="card top-right portrait only-desktop">
+  <img src="./News/Rice-imports.jpg" alt="Rice Imports">
+  <h3 class="News-title">
+    <a href="https://example.com" target="_blank">
+      <u>Rice imports fall despite lower prices–report</u>
+    </a>
+  </h3>
+  <div class="card-text">
+    <p class="date">DATE: May 12, 2025</p>
+    <p>
+      The slide in international prices did not translate into more rice purchases for the Philippines,
+      based on the latest government data which indicated that arrivals as of May 2 declined.
+    </p>
+  </div>
+</div>
+
+
+<div class="card tail-left">
+  <div class="card-left">
+    <img src="./News/Rice-imports.jpg" alt="Rice Imports">
+    <h3 class="News-title">
+      <a href="https://example.com" target="_blank">
+        <u>Rice imports fall despite lower prices–report</u>
+      </a>
+    </h3>
+  </div>
+  <div class="card-text">
+    <p class="date">DATE: May 12, 2025</p>
+    <p>
+      The slide in international prices did not translate into more rice purchases for the Philippines,
+      based on the latest government data which indicated that arrivals as of May 2 declined.
+    </p>
+  </div>
+</div>
+
+      <h1 class="footer">In PH<br></h1>
+      <h1 class="footer-son">Agriculture</h1>
+      <a href="#" class="more-news">→ Click here for more news</a>
+    </div>
+  </div>
+-->
+<!--Start of Footer-->
+<footer>
+  <div class = "footer-container">
+	<div class = "footer-b1">
+		<img src = "./Footer/Footer_AgriLuntian_logo.png" class = "logo">
+		<p><b>
+		Agriculture Made Easy, <br> 	
+		Together with Farmers. </b><br>
+		by <span style = "color: #AED22B">AgriLuntian</span><br>
+		</p>
+	</div>
+	<div class = "footer-b2">
+		<p><b>MENU</b></p>
+		<ul class = "footer-link">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Farming</a></li>
+			<li><a href="#">Livestock</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">News</a></li>
+		</ul>
+	</div>
+	<div class = "footer-b3">
+		<p><b>MORE</b></p>
+		<ul class = "footer-link">
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">FAQs</a></li>
+		</ul>
+	</div>
+	<div class = "footer-b4">
+		<button class = "sign-up"><a href = "./Login_SignUp/SignUp.html">SIGN UP</a></button>
+		<p class = "follow-us">FOLLOW US AT</p>
+			<div class = "soc">
+				<img src = "./Footer/tiktok_icon.png" class = "soc-icon">
+				<img src = "./Footer/insta_icon.png" class = "soc-icon">			
+				<img src = "./Footer/fb_icon.png" class = "soc-icon">
+			</div>
+	</div>
+  </div> <br>
+    <hr> <br>
+  <div class = "footer-end">
+    <p>© 2025 All Rights Reserved. AgriLuntian.</p>
+    <p>Terms of Services and Privacy Policy</p>
+  </div>
+  </footer>
+<!--End of Footer-->
+
+  <script src="./HomePage/dropdown.js"></script>
+  <script>
+    document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
